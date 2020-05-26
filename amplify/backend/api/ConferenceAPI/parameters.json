@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "ConferenceAPI",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authmyamplifyappgraphql77734de6",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
